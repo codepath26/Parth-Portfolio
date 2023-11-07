@@ -4,6 +4,7 @@ const sidemenu = document.getElementById("sidemenu");
 const eduction = document.getElementById("eduction");
 const hideMenu = document.getElementById("hide-menu");
 const showMenu = document.getElementById("show-menu");
+const image = document.getElementById("image");
 
 const tabContents = document.querySelectorAll(".tab-contents");
 const tabLinks = document.querySelectorAll(".tab-links");
@@ -42,3 +43,16 @@ function showheader(){
   console.log("show menu")
 sidemenu.style.right = "0";
 }
+
+
+
+function checksize (){
+
+  if (window.innerWidth < 600) {
+    image.src ='./images/AboutNew.png'
+  }else{
+    image.src ='./images/Aboutme05.svg'
+  }
+}
+window.onresize = checksize;
+window.onload = checksize;
