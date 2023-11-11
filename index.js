@@ -1,7 +1,7 @@
 const skills = document.getElementById("skills");
-const exprience = document.getElementById("exprience");
+const experience = document.getElementById("experience");
 const sidemenu = document.getElementById("sidemenu");
-const eduction = document.getElementById("eduction");
+const education = document.getElementById("education");
 const hideMenu = document.getElementById("hide-menu");
 const showMenu = document.getElementById("show-menu");
 const image = document.getElementById("image");
@@ -27,10 +27,10 @@ const displaydata = (e, tabname) => {
 skills.addEventListener("click", (e) => {
   displaydata(e, "showSkills");
 });
-exprience.addEventListener("click", (e) => {
+experience.addEventListener("click", (e) => {
   displaydata(e, "showExperience");
 });
-eduction.addEventListener("click", (e) => {
+education.addEventListener("click", (e) => {
   displaydata(e, "showEducation");
 });
 
